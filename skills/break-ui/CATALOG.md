@@ -23,7 +23,7 @@ Use `example.com`, `example.org`, or `.test` domains for emails and URLs, so the
 | `María José de la Cruz y Fernández` | Lowercase particles; initials `Md` or `MF`, sorting by "last name" |
 | `dana` | All lowercase; initials should still be uppercase |
 | `🦊 Fox` | Emoji first; `.charAt(0)` returns half a surrogate pair (`�`) |
-| `👩🏽‍💻 Priya` | ZWJ emoji sequence; `.length` is 7+, slicing breaks it into pieces |
+| `👩🏽\u200D💻 Priya` | ZWJ emoji sequence; `.length` is 7+, slicing breaks it into pieces |
 | `  Sam   Lee ` | Leading, trailing, and repeated spaces; initials from empty words, odd gaps |
 | *(missing)* | No name at all, only an email; the UI must fall back to something |
 
